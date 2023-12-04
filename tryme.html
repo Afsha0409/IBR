@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeimg website will remove the background of any image for you</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Add your existing styles here */
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .overlay-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            z-index: 9999;
+        }
+
+        .step-container {
+            max-width: 600px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .step {
+            display: none;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        .step h2 {
+            color: #333;
+        }
+
+        .step p {
+            color: #666;
+        }
+
+        .step img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<header>
+    <h1> Bg Remover </h1>
+    <div class="btn">
+        <button class="remove">remove background</button>
+        <button class="projects">your projects</button>
+        <input type="search" placeholder="Search">
+    </div>
+</header>
+
+<body>
+    <!-- Your existing content goes here -->
+
+    <div class="script">
+        <p>Say goodbye to the hassle of removing backgrounds from your images. Our innovative online platform offers a
+            seamless solution to effortlessly extract backgrounds from your photos in just a few clicks.
+            With our advanced AI-powered technology, you can instantly create professional-looking, transparent
+            backgrounds. <br> Whether you're a photographer, graphic designer, social media enthusiast, or just someone
+            who loves editing photos, our tool is designed to make the process quick, easy, and precise.</p>
+    </div>
+
+    <div class="boxes">
+        <!-- <div class="box1"> -->
+        <img src="images/img.jpg" alt="Oops!" class="box1">
+        <!-- </div> -->
+        <!-- <div class="box2"> -->
+        <img src="images/img1.jpg" alt="Oops!" class="box2">
+        <!-- </div> -->
+    </div>
+
+    <button class="login" style="text-decoration: none"><a href="#login.html">LogIn</a></button>
+    <button class="signup">SignUp</button>
+    <hr>
+    <button class="tryme" onclick="startGuide()">TryMe</button>
+    <hr>
+
+    <!-- Step-by-Step Guide Overlay -->
+    <div class="overlay-container">
+        <div class="step-container">
+            <div class="step active">
+                <h2>Step 1: Choose an Image</h2>
+                <p>Click the "Remove Background" button and choose an image from your device.</p>
+                <img src="step1-image.jpg" alt="Step 1 Image">
+            </div>
+
+            <div class="step">
+                <h2>Step 2: Preview and Adjust</h2>
+                <p>Preview the result and make any necessary adjustments. Ensure the background is removed correctly.</p>
+                <img src="step2-image.jpg" alt="Step 2 Image">
+            </div>
+
+            <!-- Add more steps as needed -->
+
+            <button onclick="nextStep()">Next Step</button>
+        </div>
+    </div>
+
+    <script>
+        let currentStep = 0;
+
+        function startGuide() {
+            const steps = document.querySelectorAll('.step');
+            steps[currentStep].classList.add('active');
+        }
+
+        function nextStep() {
+            const steps = document.querySelectorAll('.step');
+            if (currentStep < steps.length - 1) {
+                steps[currentStep].classList.remove('active');
+                currentStep++;
+                steps[currentStep].classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+<footer>
+    @Copyright 2023 Bg Removal - All rights reserved.
+</footer>
+
+</html>

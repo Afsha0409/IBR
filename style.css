@@ -1,0 +1,329 @@
+/* .box1{
+    border: 2px solid rgb(109, 108, 108);
+    border-radius: 14px;
+    height: 50vw;
+    background-color: white;
+    margin: 12px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+img,.box1{
+    border: 2px solid rgb(109, 108, 108);
+    border-radius: 14px;
+    height: 50vw;
+    background-color: white;
+    margin: 12px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxes {
+    display: flex;
+}
+
+/* 
+.box2 {
+    border: 2px solid rgb(109, 108, 108);
+    border-radius: 14px;
+    height: 30vw;
+    background-color: white;
+    margin: 12px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -56px;
+} */
+
+img,.box2{
+    border: 2px solid rgb(109, 108, 108);
+    border-radius: 14px;
+    height: 30vw;
+    background-color: white;
+    margin: 12px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-fill-mode: forwards;
+    animation-duration: 5ms;
+}
+html {
+    height: 100%;
+}
+
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234, 249, 249);
+}
+
+
+footer {
+    text-align: center;
+    height: 100px;
+    margin-top: auto;
+    background-color: black;
+    color: white;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 0px;
+    margin: -6px;
+    padding: 7px;
+    background-color: rgb(39 122 122);
+    margin: -9px -9px;
+}
+
+
+header.h1 {
+    font-size: 35px;
+    font-family: "montserrat";
+
+}
+
+
+.remove {
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(24, 195, 233);
+    border-radius: 13px;
+    color: black;
+    font-size: 20px;
+    font-family: "montserrat";
+    box-sizing: border-box;
+    border-block-end-width: 4px;
+    transition: 0.5s;
+    box-shadow: 0 5px 0 solid gray;
+    text-align: center;
+    text-decoration: none; 
+    padding: 6px;
+}
+
+
+.remove:active {
+    box-shadow: none;
+    transform: translateY(10px);
+}
+
+
+.remove:hover {
+    background-color:rgb(24, 195, 233) ;
+    color:white;
+    cursor: pointer;
+}
+
+
+.projects{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(24, 195, 233);
+    border-radius: 13px;
+    color: black;
+    font-size: 20px;
+    font-family: "montserrat";
+    box-sizing: border-box;
+    border-block-end-width: 4px;
+    transition: 0.5s;
+    box-shadow: 0 5px 0 solid gray;
+    text-align: center;
+    text-decoration: none; 
+    padding: 6px;
+}
+
+
+.projects:active {
+    box-shadow: none;
+    transform: translateY(10px);
+}
+
+
+.projects:hover {
+    background-color:rgb(24, 195, 233) ;
+    color:white;
+    cursor: pointer;
+}
+
+
+.login{
+    cursor: pointer;
+    background-color: none;
+    border: 2px solid rgb(24, 195, 233);
+    border-radius: 13px;
+    color: black;
+    font-size: 20px;
+    font-family: "montserrat";
+    box-sizing: border-box;
+    border-block-end-width: 4px;
+    transition: 0.5s;
+    box-shadow: 0 5px 0 solid gray;
+    text-align: center;
+    text-decoration: none;
+}
+
+.login:active {
+    box-shadow: none;
+    transform: translateY(10px);
+}
+
+.login:hover {
+    background-color:rgb(24, 195, 233) ;
+    color:white;
+    cursor: pointer;
+}
+
+
+.signup{
+    cursor: pointer;
+    background-color: none;
+    border: 2px solid rgb(24, 195, 233);
+    border-radius: 13px;
+    color: black;
+    font-size: 20px;
+    font-family: "montserrat";
+    box-sizing: border-box;
+    border-block-end-width: 4px;
+    transition: 0.5s;
+    box-shadow: 0 5px 0 solid gray;
+    text-align: center;
+    text-decoration: none;
+}
+
+.signup:active {
+    box-shadow: none;
+    transform: translateY(10px);
+}
+
+.signup:hover {
+    background-color:rgb(24, 195, 233) ;
+    color:white;
+    cursor: pointer;
+} 
+
+
+.button {
+    cursor: pointer;
+    background-color: none;
+    border: 2px solid rgb(24, 195, 233);
+    border-radius: 13px;
+    color: black;
+    font-size: 20px;
+    font-family: "montserrat";
+    box-sizing: border-box;
+    border-block-end-width: 4px;
+    transition: 0.5s;
+    box-shadow: 0 5px 0 solid gray;
+    width: 25%;
+    height: 25px;
+    text-decoration:none ;
+    text-align: center;
+}
+
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(10px);
+}
+
+
+.button:hover {
+    background-color:rgb(24, 195, 233) ;
+    color:white;
+    cursor: pointer;
+}
+
+input{
+    border-radius: 11px;
+    height: 25px;
+    text-align: right;
+}
+
+
+.tryme{
+    cursor: pointer;
+    background-color: none;
+    border: 2px solid rgb(24, 195, 233);
+    border-radius: 13px;
+    color: black;
+    font-size: 20px;
+    font-family: "montserrat";
+    box-sizing: border-box;
+    border-block-end-width: 4px;
+    transition: 0.5s;
+    box-shadow: 0 5px 0 solid gray;
+    text-decoration:none ;
+    text-align: center;
+    height: 35px;
+    width: 6.1rem;
+    border: 0 5px 0 solid black;
+    border-radius: -51px;
+    left: 50vw;
+    position: relative;
+}
+
+.tryme:active{
+    box-shadow: none;
+    transform: translateY(10px);
+}
+
+.tryme:hover{
+    background-color:rgb(24, 195, 233) ;
+    color:white;
+    cursor: pointer;
+}
+
+.script{
+    font-size: large;
+}
+
+.login{
+    cursor: pointer;
+    background-color: none;
+    border: 2px solid rgb(24, 195, 233);
+    border-radius: 13px;
+    color: black;
+    font-size: 20px;
+    font-family: "montserrat";
+    box-sizing: border-box;
+    border-block-end-width: 4px;
+    transition: 0.5s;
+    box-shadow: 0 5px 0 solid gray;
+    height: 35px;
+    width: 6.1rem;
+    border: 0 5px 0 solid black;
+    border-radius: -51px;
+    left: 75vw;
+    position: relative;
+    top: -287px;
+}
+
+.login:active{
+    box-shadow: none;
+    transform: translateY(10px);
+}
+
+.signup{
+    height: 35px;
+    width: 6.1rem;
+    border: 0 5px 0 solid black;
+    border-radius: -51px;
+    left: 85vw;
+    position: relative;
+    top: -321px;
+}
+
+.signup:active{
+    box-shadow: none;
+    transform: translateY(10px);
+}

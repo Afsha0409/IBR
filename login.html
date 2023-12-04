@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login page</title>
+</head>
+<style>
+  html {
+    height: 100%;
+  }
+
+
+  body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234, 249, 249);
+  }
+
+  table {
+    left: 476px;
+    position: fixed;
+    margin-top: 6px;
+    left: 520px;
+    /* margin-bottom: 50%; 
+    display: flex;
+    justify-content: center;
+    text-align: center;  */
+  }
+
+  td {
+    display: flex;
+    text-align: center;
+    margin: 2px 5px;
+  }
+
+
+  .form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid rgb(24, 195, 233);
+    border-radius: 13px;
+    border-width: 50%;
+    width: 34%;
+    display: flex;
+    left: 456px;
+    position: absolute;
+    height: 54%;
+    margin-top: 12%;
+  }
+
+  /* .border{
+    border: 2px solid rgb(24, 195, 233);
+    border-radius: 13px;
+    border-width: 50%;
+    width: 50%;
+    display: flex;
+    left: 120px;
+    position: absolute;
+    height: 50%;
+  } */
+  .test {
+    margin-top: 27%;
+    position: absolute;
+  }
+
+
+  .SignUp {
+    cursor: pointer;
+    background-color: rgb(24, 195, 233);
+    border: 2px solid rgb(24, 195, 233);
+    border-radius: 13px;
+    color: black;
+    font-size: 20px;
+    font-family: "montserrat";
+    box-sizing: border-box;
+    border-block-end-width: 4px;
+    transition: 0.5s;
+    box-shadow: 0 5px 0 solid gray;
+    text-align: center;
+    text-decoration: none;
+    padding: 6px;
+    margin: -5px;
+    left: 669px;
+    position: fixed;
+  }
+
+
+  .SignUp:active {
+    box-shadow: none;
+    transform: translateY(10px);
+  }
+
+  .SignUp:hover {
+    background-color:rgb(24, 195, 233);
+    color: white;
+    cursor: pointer;
+  }
+
+  /* .login {
+    left: 40%;
+  } */
+
+  .checkbox {
+    margin-top: 47px;
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .socialmedia,
+  img {
+    height: 50px;
+    width: 49px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 146px;
+    padding: 5px;
+  }
+
+  .username{
+    border-radius: 11px;
+    height: 36px;
+    width: 340px;
+    margin: 3px;
+    text-align: center;
+  }
+
+
+  .email{
+    border-radius: 11px;
+    height: 36px;
+    width: 340px;
+   margin: 3px;
+   text-align: center;
+  }
+
+
+  .password{
+    border-radius: 11px;
+    height: 36px;
+    width: 340px;
+    margin: 3px;
+    text-align: center;
+  }
+/* label{
+  border-radius: 5px;
+    border: 1px solid black;
+} */
+</style>
+
+<body>
+  <form action="post">
+    <div class="border">
+      
+      <div class="form">
+        <table>
+          <div class="inputs">
+            
+            <td><input type="username" class="username" placeholder="Enter UserName"><span
+              style="color: red;">*</span></td>
+            <td><input type="email" class="email" placeholder="Enter Email-ID"><span
+              style="color: red;">*</span></td>
+            <td><input type="password" class="password" placeholder="Enter Password"><span
+              style="color: red;">*</span></td>
+
+            <!-- <td><label for="username"><input type="Username" placeholder="Enter valid name" required><span
+              style="color: red;">*</span>
+            </label></td>
+            <td><label for="email"><input type="email" placeholder="Enter your Email" required><span
+              style="color: red;">*</span>
+            </label></td>
+            <td><label for="password"> <input type="password" placeholder="Enter your Password" required><span
+              style="color: red;">*</span>
+            </label></td> -->
+          </div>
+          
+        </table>
+        <div class="test">
+          <label for="login" class="checkbox">
+            <input type="checkbox"> I agree terms and conditions </label>
+            <br>
+        <a href="signup.html" class="SignUp">SignUp</a>
+      </div>
+      
+      <div class="socialmedia">
+        <img src="images/google.png"><a href=""></a>
+        <img src="images/facebook.jpg">
+        <img src="images/insta.webp">
+        <img src="images/linkedin.webp">
+      </div>
+    </div>
+  </div>
+  </form>
+
+  <script src="js.js"></script>
+
+</html>
